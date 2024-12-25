@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fork and Chill</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Fork and Chill</h1>
+        <div class="menu-controls">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search menu items...">
+            </div>
+            <div class="filter-buttons">
+                <button id="showAllBtn" class="active">Show All</button>
+                <button id="vegBtn">Vegetarian</button>
+                <button id="nonVegBtn">Non-Vegetarian</button>
+                <button id="cartBtn"><i class="fas fa-shopping-cart"></i> Cart <span id="cartCount">0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="menuContainer" class="menu-container"></div>
+        
+        <div id="cartModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Your Cart</h2>
+                <div id="cartItems"></div>
+                <div id="cartTotal">
+                    <h3>Total: ₹<span id="totalAmount">0</span></h3>
+                </div>
+                <button id="checkoutBtn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
